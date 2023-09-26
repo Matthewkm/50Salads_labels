@@ -1,6 +1,6 @@
 # Convenient 50Salads Dataset Action Labels
 
-I was unable to find coherient and conventiant labels for the [50 Salads dataset](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/), so created these frame level segment labels to hopefully help with consistent training across works
+I was unable to find coherient and conventiant labels for the [50 Salads dataset](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/), so created these segment level frame index labels to hopefully help with consistent training across works
 
 ## Usage
 

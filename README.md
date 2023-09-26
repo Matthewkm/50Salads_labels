@@ -4,8 +4,12 @@ I was unable to find coherient and conventiant labels for the [50 Salads dataset
 
 ## Usage
 
-Download the RGB videos from the official 50 Salads [download page](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/data/)
+Download the RGB videos from the official 50 Salads [download page](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/data/) and decode the video (to be added).
 
-Decode the video (to be added)
+The frame level labels in the Frame_Lables should match decoded RGB frame with labels in the form of <code>[start_idx,end_idx,class_name,class_idx]</code> 
 
-The frame level labels and splits within the Frame_Lables and Splits folder should allow for training on RGB frames belonging to the 17 (+ 2 start and end background) classes utilised within other works.
+Classes belonging to the 17 (+ 2 start and end background) classes, which are indexed in the Actions.txt file.
+
+The splits within the Splits folder match those within the [TCN implementation](https://github.com/colincsl/TemporalConvolutionalNetworks/tree/master/splits/50Salads).
+
+For convenience we provide a pytorch dataloader which operates on our frame labels. (to be added)

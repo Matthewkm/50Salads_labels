@@ -1,0 +1,15 @@
+0,603,action_start,0
+604,2198,cut_tomato,4
+2199,2548,place_tomato_into_bowl,5
+2549,3246,cut_tomato,4
+3247,3490,place_tomato_into_bowl,5
+3491,5327,cut_cheese,6
+5328,5545,place_cheese_into_bowl,7
+5546,6523,cut_lettuce,8
+6524,7357,place_lettuce_into_bowl,9
+7358,7646,add_salt,13
+7647,8413,add_vinegar,12
+8414,8920,add_oil,11
+8921,9224,add_pepper,14
+9225,10342,mix_dressing,15
+10343,11677,action_end,18

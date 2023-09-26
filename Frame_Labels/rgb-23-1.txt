@@ -1,0 +1,17 @@
+0,524,action_start,0
+525,1040,add_oil,11
+1041,1394,add_vinegar,12
+1395,1631,add_salt,13
+1632,1829,add_pepper,14
+1830,3217,cut_lettuce,8
+3218,3493,place_lettuce_into_bowl,9
+3494,5459,cut_tomato,4
+5460,5751,place_tomato_into_bowl,5
+5752,6683,cut_cheese,6
+6684,6871,place_cheese_into_bowl,7
+6872,7834,peel_cucumber,1
+7835,9358,cut_cucumber,2
+9359,10302,place_cucumber_into_bowl,3
+10303,11028,mix_ingredients,10
+11029,11573,serve_salad_onto_plate,16
+11574,13272,action_end,18

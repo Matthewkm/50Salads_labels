@@ -20,4 +20,4 @@
 11216,11638,mix_ingredients,10
 11639,12626,add_dressing,17
 12627,13234,serve_salad_onto_plate,16
-13235,13878,action_end,18
+13235,13880,action_end,18

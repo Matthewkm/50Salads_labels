@@ -1,4 +1,4 @@
-0,487,action_start,0
+1,487,action_start,0
 488,1117,add_oil,11
 1118,1566,add_vinegar,12
 1567,1746,add_salt,13

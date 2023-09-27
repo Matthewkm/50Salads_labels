@@ -1,4 +1,4 @@
-0,633,action_start,0
+1,633,action_start,0
 634,923,add_salt,13
 924,1138,add_pepper,14
 1139,1507,add_vinegar,12

@@ -1,4 +1,4 @@
-0,471,action_start,0
+1,471,action_start,0
 472,1565,cut_cucumber,2
 1566,1800,place_cucumber_into_bowl,3
 1801,2864,cut_cucumber,2

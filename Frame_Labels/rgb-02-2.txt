@@ -1,4 +1,4 @@
-0,1572,action_start,0
+1,1572,action_start,0
 1573,2432,cut_tomato,4
 2433,2828,place_tomato_into_bowl,5
 2829,3984,peel_cucumber,1

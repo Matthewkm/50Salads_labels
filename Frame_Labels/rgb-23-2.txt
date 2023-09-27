@@ -1,4 +1,4 @@
-0,1616,action_start,0
+1,1616,action_start,0
 1617,2653,cut_lettuce,8
 2654,2882,place_lettuce_into_bowl,9
 2883,4889,cut_tomato,4

@@ -1,4 +1,4 @@
-0,502,action_start,0
+1,502,action_start,0
 503,1812,peel_cucumber,1
 1813,3384,cut_cucumber,2
 3385,3773,place_cucumber_into_bowl,3

@@ -1,4 +1,4 @@
-0,719,action_start,0
+1,719,action_start,0
 720,1041,add_pepper,14
 1042,1320,add_salt,13
 1321,1929,add_oil,11

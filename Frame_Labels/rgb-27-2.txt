@@ -1,4 +1,4 @@
-0,353,action_start,0
+1,353,action_start,0
 354,1113,cut_tomato,4
 1114,1845,peel_cucumber,1
 1846,2535,cut_cucumber,2

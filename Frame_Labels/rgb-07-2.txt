@@ -1,4 +1,4 @@
-0,491,action_start,0
+1,491,action_start,0
 492,2504,cut_lettuce,8
 2505,2798,place_lettuce_into_bowl,9
 2799,4643,cut_cheese,6

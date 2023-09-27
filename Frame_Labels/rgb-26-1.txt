@@ -1,4 +1,4 @@
-0,549,action_start,0
+1,549,action_start,0
 550,1268,cut_lettuce,8
 1269,1458,place_lettuce_into_bowl,9
 1459,2430,peel_cucumber,1

@@ -1,4 +1,4 @@
-0,359,action_start,0
+1,359,action_start,0
 360,1138,cut_tomato,4
 1139,1391,place_tomato_into_bowl,5
 1392,1896,cut_cheese,6

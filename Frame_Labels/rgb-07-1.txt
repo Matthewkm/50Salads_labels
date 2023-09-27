@@ -1,4 +1,4 @@
-0,874,action_start,0
+1,874,action_start,0
 875,2778,cut_cheese,6
 2779,4989,peel_cucumber,1
 4990,6079,cut_cucumber,2

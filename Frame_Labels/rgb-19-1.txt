@@ -17,4 +17,4 @@
 10331,10544,add_vinegar,12
 10545,11000,mix_dressing,15
 11001,12429,serve_salad_onto_plate,16
-12430,12815,action_end,18
+12430,12817,action_end,18

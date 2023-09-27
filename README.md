@@ -4,12 +4,14 @@ I was unable to find coherient and conventiant labels for the [50 Salads dataset
 
 ## Usage
 
-Download the RGB videos from the official 50 Salads [download page](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/data/) and decode the video (to be added).
+- Download the RGB videos from the official 50 Salads [download page](https://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/data/) and unzip into a file named "rgb"
 
-The frame level labels in the Frame_Lables should match decoded RGB frame with labels in the form of <code>[start_idx,end_idx,class_name,class_idx]</code> 
+- [Install and add ffmpeg to environment path](https://video.stackexchange.com/questions/20495/how-do-i-set-up-and-use-ffmpeg-in-windows) and then decode the video using <code> python decode_video.py --vidDir rgb --outDir rgb_images </code>
 
-Classes belonging to the 17 (+ 2 start and end background) classes, which are indexed in the Actions.txt file.
+- The frame level labels in the Frame_Lables should match decoded RGB frame with labels in the form of: [start_idx,end_idx,class_name,class_idx] 
 
-The splits within the Splits folder match those within the [TCN implementation](https://github.com/colincsl/TemporalConvolutionalNetworks/tree/master/splits/50Salads).
+- Classes belonging to the 17 (+ 2 start and end background) classes, which are indexed in the Actions.txt file.
 
-For convenience we provide a pytorch dataloader which operates on our frame labels. (to be added)
+- The splits within the Splits folder match those within the [TCN implementation](https://github.com/colincsl/TemporalConvolutionalNetworks/tree/master/splits/50Salads).
+
+- For convenience we provide a pytorch dataloader which operates on our frame labels. (to be added)

@@ -15,4 +15,4 @@
 7626,7723,place_lettuce_into_bowl,9
 7724,8076,mix_ingredients,10
 8077,8560,serve_salad_onto_plate,16
-8561,12075,action_end,18
+8561,12077,action_end,18

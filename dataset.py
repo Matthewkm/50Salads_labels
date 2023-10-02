@@ -67,6 +67,12 @@ class SaladsDataSet(data.Dataset):
 
 		self.video_list = [VideoRecord(item) for item in all_labels]
 
+	
+	def _get_max_idx(self,record):
+		"""
+		return the maximum idx of the frame for a given video
+		"""
+		return len(os.listdir('{}rgb-{}/'.format(self.rootpath,record.name)))
 
 	def _get_train_indices(self,record):
 		"""
@@ -77,6 +83,11 @@ class SaladsDataSet(data.Dataset):
 		if self.sampling_type == 'surround':
 			sample_pos = np.random.randint(int(record.start_frame - (clip_length/2)),int(record.end_frame - (clip_length/2))) #surround sampling as implemented in https://arxiv.org/abs/2211.13694
 			indices = [(idx * self.t_stride + sample_pos) for idx in range(self.num_frames)]
+
+			#crop indicies which are beyond the number of frames in the full video - occurs rarely. 
+			max_idx = self._get_max_idx(record)
+			indices[indices<1] = 1
+			indices[indices>max_idx] = max_idx
 
 		elif self.sampling_type == 'dense': #dense sampling as implemented in most works.
 			clip_length = self.t_stride*self.num_frames #the desired clip length we want to extract.

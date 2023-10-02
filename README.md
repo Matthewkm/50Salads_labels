@@ -14,4 +14,23 @@ I was unable to find coherient and conventiant labels for the [50 Salads dataset
 
 - The splits within the Splits folder match those within the [TCN implementation](https://github.com/colincsl/TemporalConvolutionalNetworks/tree/master/splits/50Salads).
 
-- For convenience we provide a pytorch dataloader which operates on our frame labels. (to be added)
+- For convenience we provide a pytorch dataloader along with some simple image transformations. The data loader can be tested within the dataset.py, or via:
+```python
+import torchvision
+from transforms import *
+
+train_trans = torchvision.transforms.Compose([
+			GroupScale(256),
+			GroupRandomCrop(224),
+			Stack(),
+			ToTorchFormatTensor(),
+			GroupNormalize(
+				mean=[.485, .456, .406],
+				std=[.229, .224, .225]
+			)]
+		)
+
+from dataset import SaladsDataSet
+train_data = SaladsDataSet(rootpath='rgb_images/',label_path='Frame_labels/',split=1,t_stride=8,num_frames=8,sampling_type='surround',mode='train',transforms=train_trans)
+```
+

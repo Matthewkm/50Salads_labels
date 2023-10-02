@@ -82,7 +82,7 @@ class SaladsDataSet(data.Dataset):
 
 		if self.sampling_type == 'surround':
 			sample_pos = np.random.randint(int(record.start_frame - (clip_length/2)),int(record.end_frame - (clip_length/2))) #surround sampling as implemented in https://arxiv.org/abs/2211.13694
-			indices = [(idx * self.t_stride + sample_pos) for idx in range(self.num_frames)]
+			indices = np.asarray([(idx * self.t_stride + sample_pos) for idx in range(self.num_frames)])
 
 			#crop indicies which are beyond the number of frames in the full video - occurs rarely. 
 			max_idx = self._get_max_idx(record)

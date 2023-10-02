@@ -91,7 +91,6 @@ class SaladsDataSet(data.Dataset):
 			indices[indices<record.start_frame] = record.start_frame
 			indices[indices>record.end_frame] = record.end_frame 
 
-		print(indices) 
 		return indices
 
 
